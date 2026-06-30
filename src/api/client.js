@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 // Trim trailing slash to prevent double-slash in URLs like //complaints/my
-const BASE_URL = (import.meta.env.VITE_API_URL || 'http://localhost:8000/api/v1').replace(/\/$/, '')
+const BASE_URL = (import.meta.env.VITE_API_URL || 'https://civicpulse-backend-ii1e.onrender.com/api/v1').replace(/\/$/, '')
 
 const client = axios.create({
   baseURL: BASE_URL,
